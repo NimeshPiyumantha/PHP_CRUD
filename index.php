@@ -21,9 +21,9 @@
 
 <div class="container">
     <?php
-    if(isset($_GET['msg'])){
+    if (isset($_GET['msg'])) {
         $msg = $_GET['msg'];
-        echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">'.$msg.'
+        echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">' . $msg . '
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>';
 
@@ -45,6 +45,7 @@
         <tbody>
         <?php
         include "db_conn.php";
+
         $sql = "SELECT * FROM `users`";
         $result = mysqli_query($conn, $sql);
         while ($row = mysqli_fetch_assoc($result)) {
@@ -55,8 +56,10 @@
                 <td><?php echo $row['mobile'] ?></td>
                 <td><?php echo $row['address'] ?></td>
                 <td>
-                    <a href="edit.php?id=<?php echo $row['id'] ?>" class="link-dark"><i class="fa-solid fa-pen-to-square fs-5 me-3"></i> </a>
-                    <a href="delete.php?id=<?php echo $row['id'] ?>" class="link-dark"><i class="fa-solid fa-trash fs-5 me-3"></i> </a>
+                    <a href="edit.php?id=<?php echo $row['id'] ?>" class="link-dark">
+                        <i class = "fa-solid fa-pen-to-square fs-5 me-3"></i> </a>
+                    <a href="delete.php?id=<?php echo $row['id'] ?>" class="link-dark">
+                        <i class = "fa-solid fa-trash fs-5"></i> </a>
                 </td>
             </tr>
             <?php
