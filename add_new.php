@@ -59,7 +59,7 @@ if (isset($_POST['submit'])) {
                     <input type="text" class="form-control" name="mobile" placeholder="07771234567">
                 </div>
                 <div class="col">
-                    <label class="form-label">Address :</label>
+                    <label class="form-label">User Address :</label>
                     <input type="text" class="form-control" name="address" placeholder="Galle">
                 </div>
             </div>
