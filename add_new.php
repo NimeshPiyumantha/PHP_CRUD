@@ -31,7 +31,7 @@ if (isset($_POST['submit'])) {
     <title>Student Create</title>
 </head>
 <body>
-<nav class=" navbar navbar-light justify-content-center fs-3 mb-5" style="background-color: #00ff5573;">
+<nav class=" navbar navbar-light justify-content-center fs-3 mb-5 fw-bold" style="background-color: #00ff5573;">
     PHP Complete CRUD Application
 </nav>
 
@@ -45,28 +45,28 @@ if (isset($_POST['submit'])) {
         <form action="" method="post" style="width:50vw; min-width: 300px;">
             <div class="row">
                 <div class="col">
-                    <label class="form-label">User ID :</label>
-                    <input type="text" class="form-control" name="id" placeholder="C001">
+                    <label class="form-label fw-bold">User ID :</label>
+                    <input type="text" class="form-control fw-bold" name="id" placeholder="C001">
                 </div>
                 <div class="col">
-                    <label class="form-label">User Name :</label>
-                    <input type="text" class="form-control" name="name" placeholder="Nimesh">
+                    <label class="form-label fw-bold">User Name :</label>
+                    <input type="text" class="form-control fw-bold" name="name" placeholder="Nimesh">
                 </div>
             </div>
             <div class="row  mt-3">
                 <div class="col">
-                    <label class="form-label">Contact Number :</label>
-                    <input type="text" class="form-control" name="mobile" placeholder="07771234567">
+                    <label class="form-label fw-bold">Contact Number :</label>
+                    <input type="text" class="form-control fw-bold" name="mobile" placeholder="07771234567">
                 </div>
                 <div class="col">
-                    <label class="form-label">User Address :</label>
-                    <input type="text" class="form-control" name="address" placeholder="Galle">
+                    <label class="form-label fw-bold">User Address :</label>
+                    <input type="text" class="form-control fw-bold" name="address" placeholder="Galle">
                 </div>
             </div>
 
             <div class="mt-3">
-                <button type="submit" class="btn btn-success" name="submit"> Save User</button>
-                <a href="index.php" class="btn btn-danger">Cancel</a>
+                <button type="submit" class="btn btn-success fw-bold" name="submit"> Save User</button>
+                <a href="index.php" class="btn btn-danger fw-bold">Cancel</a>
             </div>
         </form>
     </div>

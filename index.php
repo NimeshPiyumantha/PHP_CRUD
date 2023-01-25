@@ -15,7 +15,7 @@
     <title>Student Create</title>
 </head>
 <body>
-<nav class=" navbar navbar-light justify-content-center fs-3 mb-5" style="background-color: #00ff5573;">
+<nav class=" navbar navbar-light justify-content-center fs-3 mb-5 fw-bold" style="background-color: #00ff5573;">
     PHP Complete CRUD Application
 </nav>
 
@@ -23,16 +23,16 @@
     <?php
     if (isset($_GET['msg'])) {
         $msg = $_GET['msg'];
-        echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">' . $msg . '
+        echo '<div class="alert alert-warning alert-dismissible fade show fw-bold" role="alert">' . $msg . '
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>';
 
     }
     ?>
 
-    <a href="add_new.php" class="btn btn-secondary">Add New</a>
+    <a href="add_new.php" class="btn btn-secondary fw-bold">Add New</a>
 
-    <table class="table table-hover text-center mt-3">
+    <table class="table table-hover text-center mt-3 fw-bold">
         <thead class="table-dark">
         <tr>
             <th scope="col">User ID</th>
@@ -56,9 +56,9 @@
                 <td><?php echo $row['mobile'] ?></td>
                 <td><?php echo $row['address'] ?></td>
                 <td>
-                    <a href="edit.php?id=<?php echo $row['id'] ?>" class="link-dark">
+                    <a href="edit.php?id=<?php echo $row['id'] ?>" class="link-warning">
                         <i class = "fa-solid fa-pen-to-square fs-5 me-3"></i> </a>
-                    <a href="delete.php?id=<?php echo $row['id'] ?>" class="link-dark">
+                    <a href="delete.php?id=<?php echo $row['id'] ?>" class="link-danger">
                         <i class = "fa-solid fa-trash fs-5"></i> </a>
                 </td>
             </tr>
