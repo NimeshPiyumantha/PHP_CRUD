@@ -9,11 +9,10 @@ if (isset($_POST['submit'])) {
     $sql = "INSERT INTO `users`(`id`, `name`, `mobile`, `address`) VALUES ('$id','$name','$mobile','$address')";
     $result = mysqli_query($conn, $sql);
 
-    if($result){
+    if ($result) {
         header("Location:index.php?msg=New record created successfully");
-    }
-    else{
-        echo "Failed: " .mysqli_error($conn);
+    } else {
+        echo "Failed: " . mysqli_error($conn);
     }
 }
 ?>

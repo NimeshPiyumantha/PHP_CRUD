@@ -11,11 +11,10 @@ if (isset($_POST['submit'])) {
 
     $result = mysqli_query($conn, $sql);
 
-    if($result){
+    if ($result) {
         header("Location:index.php?msg=Data Updated successfully");
-    }
-    else{
-        echo "Failed: " .mysqli_error($conn);
+    } else {
+        echo "Failed: " . mysqli_error($conn);
     }
 }
 ?>
