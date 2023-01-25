@@ -43,7 +43,7 @@ if (isset($_POST['submit'])) {
     </div>
 
     <?php
-    $query = "SELECT * FROM `users` where `id`='$id' ";
+    $query = "SELECT * FROM `users` WHERE `id`='$id' ";
     $result = mysqli_query($conn, $query);
     $row = mysqli_fetch_assoc($result);
     ?>
